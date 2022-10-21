@@ -16,7 +16,7 @@
             </li>
             <li>
                 <label for="mail">E-mail : </label>
-                <input type="email" name="mail" id="user_mail" value="default value">
+                <input type="email" name="user_mail" id="user_mail" value="default value">
             </li>
             <li>
                 <label for="message">Message : </label>
@@ -26,6 +26,23 @@
                 <button type="submit">Submit</button>
             </li>
         </ul>
+    </form>
+
+    <form action="/my-handling-form-page" method="post">
+        <fieldset>
+            <legend>Second form</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="user_gender" id="gender-male" value="male"/>
+                    <label for="gender-male">Male : </label>
+                </li>
+                <li>
+                    <input type="radio" name="user_gender" id="gender-female" value="female"/>
+                    <label for="gender-female">Female : </label>
+                </li>
+
+            </ul>
+        </fieldset>
     </form>
 
   </body>

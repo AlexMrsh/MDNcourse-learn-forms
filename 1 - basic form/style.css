@@ -6,6 +6,10 @@ form{
     border-radius: 1em;
 }
 
+form:nth-child(1n + 2){
+    margin-top: 20px;
+}
+
 ul{
     list-style: none;
     padding: 0;
