@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+section{
+    border: 1px solid #999;
+    border-radius: 1rem;
+    width: 30vw;
+    display: grid;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+label{
+    display: flex;
+    align-items: center;
+}
+
+label > span{
+    display: block;
+    width: 20%;
+    text-align: right;
+}
+
+input,
+textarea,
+select{
+    padding: 0;
+    margin: 10px;
+    width: 300px;
+}
+
+button{
+    display: grid;
+    margin: auto;
+}
+
+h2{
+    margin: 1rem;
+}

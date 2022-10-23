@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>5 - Other controls</title>
+</head>
+<body>
+    <h1>Other controls</h1>
+    <section>
+        <h2>Other controls 1 - Enter your comment</h2>
+        <form action="/my-handling-page" method="POST">
+            <ul>
+                <li>
+                    <label for="name">
+                        <span>Name</span>
+                        <input type="text" name="user_name" id="name">
+                    </label>
+                </li>
+                <li>
+                    <label for="comment">
+                        <span>Comments</span>
+                        <textarea name="user_comment" id="comment" cols="35" rows="10" maxlength="100"></textarea>
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Submit comment</button>
+        </form>
+    </section>
+    <section>
+        <h2>Other controls 2 - Drop-down select menu</h2>
+        <form action="/my-form-handling-page" method="post">
+            <ul>
+                <li>
+                    <label for="food">
+                        <span>Pick up your favorite food</span>
+                        <select name="user_favoriteFood" id="food">
+                            <option value="">--Please choose an option--</option>
+                            <optgroup label="Mains">
+                                <option>Salad</option>
+                                <option>Curry</option>
+                                <option>Pizza</option>
+                                <option>Fajitas</option>
+                            </optgroup>
+                            <optgroup label="Snacks">
+                                <option>Biscuits</option>
+                                <option>Crisps</option>
+                                <option>Fruit</option>
+                                <option>Breadsticks</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Submit choice</button>
+        </form>
+    </section>
+    <section>
+        <h2>Other controls 3 - Drop-down</h2>
+        <form action="/my-form-handling-page" method="post">
+            <ul>
+                <li>
+                    <label for="food">
+                        <span>Pick up your favorite food</span>
+                        <input type="text" name="user_favoriteFood" id="food" list="food-list" placeholder="--Please choose an option--">
+                        <datalist name="user_favoriteFood" id="food-list">
+                            <option>Salad</option>
+                            <option>Curry</option>
+                            <option>Pizza</option>
+                            <option>Fajitas</option>
+                            <option>Biscuits</option>
+                            <option>Crisps</option>
+                            <option>Fruit</option>
+                            <option>Breadsticks</option>
+                        </datalist>
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Submit choice</button>
+        </form>
+    </section>
+</body>
+</html>
