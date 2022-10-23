@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>4 - HTML Controls</title>
+</head>
+<body>
+    <h1>HTML 5 controls</h1>
+    <section>
+        <h2>HTML controls 1 : Update user details</h2>
+        <fieldset>
+            <legend>Edit your preferences</legend>
+            <ul>
+                <li>
+                    <label for="mail">
+                        <span>Email</span>
+                        <input type="email" id="mail" name="user_email">
+                    </label>
+                </li>
+                <li>
+                    <label for="website">
+                        <span>Website</span>
+                        <input type="url" name="user_website" id="website">
+                    </label>
+                </li>
+                <li>
+                    <label for="phoneNumber">
+                        <span>Phone number</span>
+                        <input type="tel" name="user_phoneNumber" id="phoneNumber">
+                    </label>
+                </li>
+                <li>
+                    <label for="favoriteColor">
+                        <span>Favorite Color</span>
+                        <input type="color" name="user_favoriteColor" id="favoriteColor">
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Update preferences</button>
+        </fieldset>
+    </section>
+    <section>
+        <h2>HTML controls 2 : Slider control</h2>
+        <fieldset id="fieldset-label-on-top">
+            <legend>Maximum number of people to invite</legend>
+            <output id="range-output"></output>
+            <input type="range" name="user_maxPeople" id="range-input" min="1" max="30" value="10">
+            <label for="range-input">Select maximum number of invitations</label>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </section>
+</body>
+</html>

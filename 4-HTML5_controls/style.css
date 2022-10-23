@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+section{
+    border: 1px solid #999;
+    border-radius: 1rem;
+    width: 30vw;
+    display: grid;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+fieldset{
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+h2{
+    margin: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+label{
+    display: flex;
+    align-items: center;
+}
+
+label > span{
+    display: block;
+    width: 20%;
+    text-align: right;
+}
+
+input{
+    padding: 0;
+    margin: 10px;
+    width: 200px;
+}
+
+button{
+    display: grid;
+    margin: auto;
+}
+
+#fieldset-label-on-top{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fieldset-label-on-top > button:last-child{
+    margin-top: 1rem;
+}
