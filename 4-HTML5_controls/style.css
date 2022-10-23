@@ -54,6 +54,6 @@ button{
     align-items: center;
 }
 
-#fieldset-label-on-top > button:last-child{
+button:last-child{
     margin-top: 1rem;
 }
